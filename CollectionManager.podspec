@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
     s.name             = 'CollectionManager'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.summary          = 'Um jeito simples de criar e manipular uma UICollectionView.'
-    s.homepage         = 'https://github.com/jjfernandes87/CollectionManager'
+    s.homepage         = 'https://github.com/jjfernandes87/CollectionViewManager'
     s.social_media_url = 'https://twitter.com/jfernandes87'
     s.author           = { 'jjfernandes87' => 'julio.fernandes87@gmail.com' }
-    s.source           = { :git => 'https://github.com/jjfernandes87/CollectionManager.git', :tag => s.version }
+    s.source           = { :git => 'https://github.com/jjfernandes87/CollectionViewManager.git', :tag => s.version }
     s.ios.deployment_target = '9.3'
     s.source_files = 'CollectionManager/Classes/**/*'
 
