@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D8F575D829C0F53599747AED /* Pods_CollectionManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F20E4957E88C6F2F9E0A3A4 /* Pods_CollectionManager_Tests.framework */; };
 		E8D60C2421AAFE2A3ED2F523 /* Pods_CollectionManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70225A4C1BE7E6239A65ED77 /* Pods_CollectionManager_Example.framework */; };
+		FC40FEC21FF92CDF0094E1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		FC40FEC31FF92D080094E1B7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TestViewController.swift */; };
+		FC5A1E481FF9311F00E18248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A1E471FF9311F00E18248 /* ViewController.swift */; };
+		FCB4C63F1FFC46890009F035 /* CustomXibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4C63D1FFC46890009F035 /* CustomXibCell.swift */; };
+		FCB4C6401FFC46890009F035 /* CustomXibCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4C63D1FFC46890009F035 /* CustomXibCell.swift */; };
+		FCB4C6411FFC46890009F035 /* CustomXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB4C63E1FFC46890009F035 /* CustomXibCell.xib */; };
+		FCB4C6421FFC46890009F035 /* CustomXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB4C63E1FFC46890009F035 /* CustomXibCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,7 @@
 		607FACD01AFB9204008FA782 /* CollectionManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -41,11 +47,15 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		70225A4C1BE7E6239A65ED77 /* Pods_CollectionManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		702CC0608CA0E97D227622DA /* Pods-CollectionManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionManager_Example/Pods-CollectionManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81100B9728084A53ED8519CE /* CollectionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CollectionManager.podspec; path = ../CollectionManager.podspec; sourceTree = "<group>"; };
+		81100B9728084A53ED8519CE /* CollectionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CollectionManager.podspec; path = ../CollectionManager.podspec; sourceTree = "<group>"; };
 		A50BEEF01ECB30448DBCCDF4 /* Pods-CollectionManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionManager_Tests/Pods-CollectionManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B652450F7242D3481A25F8B4 /* Pods-CollectionManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionManager_Tests/Pods-CollectionManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C067A4AD92E06E6789D5A6AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EC5B3B5C9D07BCEDCEF2CE4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C067A4AD92E06E6789D5A6AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EC5B3B5C9D07BCEDCEF2CE4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FC40FEC11FF92CDD0094E1B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FC5A1E471FF9311F00E18248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCB4C63D1FFC46890009F035 /* CustomXibCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibCell.swift; sourceTree = "<group>"; };
+		FCB4C63E1FFC46890009F035 /* CustomXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibCell.xib; sourceTree = "<group>"; };
 		FE49D3BE03F3DD658067B13F /* Pods-CollectionManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionManager_Example/Pods-CollectionManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,10 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* TestViewController.swift */,
+				FC5A1E471FF9311F00E18248 /* ViewController.swift */,
+				FCB4C63D1FFC46890009F035 /* CustomXibCell.swift */,
+				FCB4C63E1FFC46890009F035 /* CustomXibCell.xib */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for CollectionManager";
@@ -248,7 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				FCB4C6411FFC46890009F035 /* CustomXibCell.xib in Resources */,
+				FC40FEC21FF92CDF0094E1B7 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -258,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB4C6421FFC46890009F035 /* CustomXibCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FCB4C63F1FFC46890009F035 /* CustomXibCell.swift in Sources */,
+				FC5A1E481FF9311F00E18248 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* TestViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +399,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC40FEC31FF92D080094E1B7 /* TestViewController.swift in Sources */,
+				FCB4C6401FFC46890009F035 /* CustomXibCell.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +420,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDA1AFB9204008FA782 /* Base */,
+				FC40FEC11FF92CDD0094E1B7 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -520,6 +540,10 @@
 			baseConfigurationReference = 702CC0608CA0E97D227622DA /* Pods-CollectionManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CollectionManager\"",
+				);
 				INFOPLIST_FILE = CollectionManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -535,6 +559,10 @@
 			baseConfigurationReference = FE49D3BE03F3DD658067B13F /* Pods-CollectionManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CollectionManager\"",
+				);
 				INFOPLIST_FILE = CollectionManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -549,20 +577,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B652450F7242D3481A25F8B4 /* Pods-CollectionManager_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionManager_Example.app/CollectionManager_Example";
 			};
 			name = Debug;
 		};
@@ -570,16 +596,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50BEEF01ECB30448DBCCDF4 /* Pods-CollectionManager_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionManager_Example.app/CollectionManager_Example";
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module CollectionManager {
+  umbrella header "CollectionManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

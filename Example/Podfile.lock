@@ -1,0 +1,16 @@
+PODS:
+  - CollectionManager (0.1.0)
+
+DEPENDENCIES:
+  - CollectionManager (from `../`)
+
+EXTERNAL SOURCES:
+  CollectionManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CollectionManager: 4b45f478398c880602a08c3598afb0cbb16333e6
+
+PODFILE CHECKSUM: 2ba274e0cf6457f2b4f059f8c59f44a9da12b200
+
+COCOAPODS: 1.3.0

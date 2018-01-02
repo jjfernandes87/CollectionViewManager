@@ -1,0 +1,22 @@
+{
+  "name": "CollectionManager",
+  "version": "0.1.0",
+  "summary": "A short description of CollectionManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jjfernandes87/CollectionManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jjfernandes87": "julio.fernandes87@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jjfernandes87/CollectionManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CollectionManager/Classes/**/*"
+}

@@ -1,25 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kd5-ao-s2X">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Test View Controller-->
+        <scene sceneID="gBy-z2-89h">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="brp-cT-HhC" customClass="TestViewController" customModule="CollectionManager_Tests" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="odc-Pb-XCh"/>
+                        <viewControllerLayoutGuide type="bottom" id="nh3-mE-CqY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="cma-2g-7Mz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uk2-Vm-Dpe" customClass="CollectionViewManager" customModule="CollectionManager">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e27-LU-jNg">
+                                    <size key="itemSize" width="219" height="193"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomTestCell" id="L3j-MX-ncb" customClass="CustomTestCellView" customModule="CollectionManager_Tests">
+                                        <rect key="frame" x="50.5" y="0.0" width="219" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-jD-Mnq">
+                                                    <rect key="frame" x="88.5" y="86" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="2F6-jD-Mnq" firstAttribute="centerX" secondItem="L3j-MX-ncb" secondAttribute="centerX" id="apd-S3-2LU"/>
+                                            <constraint firstItem="2F6-jD-Mnq" firstAttribute="centerY" secondItem="L3j-MX-ncb" secondAttribute="centerY" id="iq5-Xx-qm1"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="2F6-jD-Mnq" id="ZUU-nU-yhU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uk2-Vm-Dpe" firstAttribute="top" secondItem="odc-Pb-XCh" secondAttribute="bottom" id="4WX-6m-nQu"/>
+                            <constraint firstItem="uk2-Vm-Dpe" firstAttribute="leading" secondItem="cma-2g-7Mz" secondAttribute="leading" id="KRW-ec-WJJ"/>
+                            <constraint firstItem="nh3-mE-CqY" firstAttribute="top" secondItem="uk2-Vm-Dpe" secondAttribute="bottom" id="Wnf-Od-xwv"/>
+                            <constraint firstAttribute="trailing" secondItem="uk2-Vm-Dpe" secondAttribute="trailing" id="scP-Nm-y2C"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="uk2-Vm-Dpe" id="peC-Gf-DA6"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8H-Kt-CHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-333.75" y="111.97183098591549"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LEV-PM-Mbo">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kd5-ao-s2X" customClass="ViewController" customModule="CollectionManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zec-hD-SqW"/>
+                        <viewControllerLayoutGuide type="bottom" id="3dq-If-H2S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lDO-df-26F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9w2-pg-rJo" customClass="CollectionViewManager" customModule="CollectionManager">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yUO-8I-mK7">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="7Im-QC-lMI" customClass="CustomCellView" customModule="CollectionManager_Example" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrU-11-59Z">
+                                                    <rect key="frame" x="79" y="90" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qrU-11-59Z" firstAttribute="centerY" secondItem="7Im-QC-lMI" secondAttribute="centerY" id="Yom-KV-n14"/>
+                                            <constraint firstItem="qrU-11-59Z" firstAttribute="centerX" secondItem="7Im-QC-lMI" secondAttribute="centerX" id="yWn-Qd-ntU"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="qrU-11-59Z" id="upX-0b-ygt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9w2-pg-rJo" firstAttribute="top" secondItem="Zec-hD-SqW" secondAttribute="bottom" id="CBW-9b-ZMs"/>
+                            <constraint firstAttribute="trailing" secondItem="9w2-pg-rJo" secondAttribute="trailing" id="Up2-Rw-z6I"/>
+                            <constraint firstItem="9w2-pg-rJo" firstAttribute="leading" secondItem="lDO-df-26F" secondAttribute="leading" id="XMB-To-lvM"/>
+                            <constraint firstAttribute="bottom" secondItem="9w2-pg-rJo" secondAttribute="bottom" id="beF-f0-txg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9w2-pg-rJo" id="I2Y-Yx-A3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fk2-Jm-T4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.5" y="111.97183098591549"/>
         </scene>
     </scenes>
 </document>
