@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'CollectionManager'
-    s.version          = '0.0.3'
+    s.version          = '0.0.4'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.summary          = 'Um jeito simples de criar e manipular uma UICollectionView.'
     s.homepage         = 'https://github.com/jjfernandes87/CollectionViewManager'
