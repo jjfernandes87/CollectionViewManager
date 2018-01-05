@@ -38,6 +38,63 @@ CollectionManager esta disponível através [CocoaPods](http://cocoapods.org). P
 ```ruby
 pod 'CollectionManager'
 ```
+Criando uma CellController e CellView. Veja que é necessário você adicionar @objc para sua classe que extende CellController, precisamos disso porque nossa CollectionManager usa o nome da classe como cellIdentifier (você deve configurar sua UICollectionViewCell com o mesmo nome da sua CellController no seu Xib ou Storyboard)
+
+```swift
+import CollectionManager
+
+@objc(CustomCell)
+class CustomCell: CellController {
+...
+}
+
+class CustomCellView: CellView {
+...
+}
+```
+Depois de criada sua classe CellController está na hora de implementar os métodos necessários para seu funcionamento.
+
+```swift
+import CollectionManager
+
+@objc(CustomCell)
+class CustomCell: CellController {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        ...
+    }
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        ...
+    }
+}
+```
+Na sua classe CellView vamos expor nossos IBOutlets.
+
+```swift
+
+class CustomCellView: CellView {
+    @IBOutlet weak var ...
+}
+```
+Agora falta pouco!
+Precisamos popular nossa Interface com as cell's que acabamos de construir.
+
+```swift
+import CollectionManager
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var collectionView: CollectionViewManager!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView.items = [CustomCell(),CustomCell(),CustomCell(),CustomCell(),CustomCell(),CustomCell()]
+        //or
+        collectionView.setSectionsAndItems = /* caso você tenha SectionController */
+    }
+}
+```
+
+Pronto!
 
 ## Author
 
