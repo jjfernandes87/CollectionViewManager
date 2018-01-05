@@ -2,7 +2,7 @@
 
 Um jeito simples de criar e manipular uma UICollectionView.
 
-[![CI Status](http://img.shields.io/travis/jjfernandes87/CollectionManager.svg?style=flat)](https://travis-ci.org/jjfernandes87/CollectionManager)
+[![CI Status](http://img.shields.io/travis/jjfernandes87/CollectionManager.svg?style=flat)](https://travis-ci.org/jjfernandes87/CollectionViewManager)
 [![Version](https://img.shields.io/cocoapods/v/CollectionManager.svg?style=flat)](http://cocoapods.org/pods/CollectionManager)
 [![License](https://img.shields.io/cocoapods/l/CollectionManager.svg?style=flat)](http://cocoapods.org/pods/CollectionManager)
 [![Platform](https://img.shields.io/cocoapods/p/CollectionManager.svg?style=flat)](http://cocoapods.org/pods/CollectionManager)
