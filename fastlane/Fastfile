@@ -1,0 +1,28 @@
+import_from_git(url: 'git@github.com:jjfernandes87/Lanes.git', path: 'fastlane/Fastfile-Public-Pod')
+
+default_platform(:ios)
+
+def changelogFile 
+ "../CHANGELOG.md"
+end
+
+def pod_name
+  "CollectionManager"
+end
+
+def proj 
+{
+    plist: "./Example/#{pod_name}/Info.plist",
+    xcodeproj: "./Example/#{pod_name}.xcodeproj/",
+    workspace: "./Example/#{pod_name}.xcworkspace",
+    repo_url: "https://github.com/jjfernandes87/CollectionManager.git",
+    scheme: "#{pod_name}-Example"
+}
+end
+
+def cocoapods 
+{
+    podspec: "./#{pod_name}.podspec",
+    pod_name: "#{pod_name}"
+}
+end
