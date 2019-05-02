@@ -35,7 +35,7 @@ open class CollectionViewManager: UICollectionView {
         }
     }
     
-    public var defaultEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+    public var defaultEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     
     /// CollectionManagerDelegate protocol
     private weak var managerDelegate: CollectionManagerDelegate?
@@ -416,7 +416,7 @@ open class CellView: UICollectionViewCell {
 open class SectionController: NSObject {
     
     var items: [AnyObject]?
-    var edgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+    var edgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     
     public convenience init(insets: UIEdgeInsets) {
         self.init()

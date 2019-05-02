@@ -23,7 +23,7 @@ open class CollectionViewManagerCache: NSObject {
     override init() {
         super.init()
         let selector = #selector(clearCache)
-        NotificationCenter.default.addObserver(self, selector: selector, name: NSNotification.Name.UIApplicationDidReceiveMemoryWarning, object: nil)
+        NotificationCenter.default.addObserver(self, selector: selector, name: UIApplication.didReceiveMemoryWarningNotification, object: nil)
     }
     
     public func loadNib(path: String?, owner: AnyObject) -> Any? {

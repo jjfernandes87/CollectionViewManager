@@ -8,7 +8,7 @@ class Tests: XCTestCase {
     override func setUp() {
         super.setUp()
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        systemUnderTest = storyboard.instantiateViewController(withIdentifier: "TestViewController") as!
+        systemUnderTest = storyboard.instantiateViewController(withIdentifier: "TestViewController") as?
         TestViewController
         _ = systemUnderTest.view
     }
@@ -45,13 +45,13 @@ class Tests: XCTestCase {
     
     func testCollectionViewManagerDefaultEdgeInsets() {
         let collection = systemUnderTest.collectionView!
-        XCTAssertEqual(collection.defaultEdgeInsets, UIEdgeInsetsMake(0, 0, 0, 0))
+        XCTAssertEqual(collection.defaultEdgeInsets, UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0))
     }
     
     func testCustomCollectionViewManagerDefaultEdgeInsets() {
         let collection = systemUnderTest.collectionView!
-        collection.defaultEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
-        XCTAssertEqual(collection.defaultEdgeInsets, UIEdgeInsetsMake(10, 10, 10, 10))
+        collection.defaultEdgeInsets = UIEdgeInsets.init(top: 10, left: 10, bottom: 10, right: 10)
+        XCTAssertEqual(collection.defaultEdgeInsets, UIEdgeInsets.init(top: 10, left: 10, bottom: 10, right: 10))
     }
     
     func testCollectionViewManagerItemsCount() {
@@ -77,7 +77,7 @@ class Tests: XCTestCase {
     
     func testCollectionViewManagerSectionCount() {
         let collection = systemUnderTest.collectionView!
-        let items = [SectionController(), CellController(), SectionController(insets: UIEdgeInsetsMake(10, 10, 10, 10))]
+        let items = [SectionController(), CellController(), SectionController(insets: UIEdgeInsets.init(top: 10, left: 10, bottom: 10, right: 10))]
         collection.setSectionsAndItems = items
         XCTAssertEqual(collection.sections.count, 2)
     }

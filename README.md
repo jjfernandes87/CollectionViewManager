@@ -17,9 +17,9 @@ Um jeito simples de criar e manipular uma UICollectionView.
 
 ## Requirements
 
-- iOS 9.3+
-- Xcode 9.0+
-- Swift 4.0+
+- iOS 11.0+
+- Xcode 10.1+
+- Swift 4.2+
 
 ## Communication
 

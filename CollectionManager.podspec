@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.social_media_url = 'https://twitter.com/jfernandes87'
     s.author           = { 'jjfernandes87' => 'julio.fernandes87@gmail.com' }
     s.source           = { :git => 'https://github.com/jjfernandes87/CollectionViewManager.git', :tag => s.version }
-    s.ios.deployment_target = '9.3'
+    s.ios.deployment_target = '11.0'
     s.source_files = 'CollectionManager/Classes/**/*'
 
     s.description      = <<-DESC
