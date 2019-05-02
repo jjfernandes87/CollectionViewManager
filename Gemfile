@@ -4,7 +4,7 @@ Encoding.default_internal = Encoding::UTF_8
 
 source "https://rubygems.org"
 
-gem 'fourflusher'
+gem "fourflusher", :git => 'https://github.com/CocoaPods/fourflusher', :branch => 'master'
 gem 'cocoapods'
 gem 'fastlane'
 gem 'xcpretty-json-formatter'
