@@ -1,4 +1,25 @@
 ##  1.0.0
+* gemfile - Julio Junior
+* no message - Julio Junior
+* corrigindo fastlane - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* corrigindo fastlane - Julio Junior
+* no message - Julio Junior
+* corrigindo fastlane - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* no message - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Publish pod version: 1.0.0 [ci skip] - Julio Junior
+* Change version number: 1.0.0 - Julio Junior
+* corrigindo fastlane - Julio Junior
+* Migração de projeto - Julio Junior
+
+##  1.0.0
 * Publish pod version: 1.0.0 [ci skip] - Julio Junior
 * Publish pod version: 1.0.0 [ci skip] - Julio Junior
 * corrigindo fastlane - Julio Junior
