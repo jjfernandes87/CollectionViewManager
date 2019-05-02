@@ -4,6 +4,7 @@ Encoding.default_internal = Encoding::UTF_8
 
 source "https://rubygems.org"
 
+gem 'fourflusher'
 gem 'cocoapods'
 gem 'fastlane'
 gem 'xcpretty-json-formatter'
