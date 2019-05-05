@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/jjfernandes87/CollectionViewManager.git', :tag => s.version }
     s.ios.deployment_target = '11.0'
     s.source_files = 'CollectionManager/Classes/**/*'
-
+    s.swift_versions = ['4.2']
     s.description      = <<-DESC
 Esqueça todos os metodos obrigatórios para criar e manipular uma CollectionView, carregue modelos diferentes de UICollectionViewCell sem a necessidade de if no seu código.
     DESC
